@@ -104,6 +104,63 @@ img {
    display: block;
 }
 
+/* ===== Hamburger Menu ===== */
+.ham-checkbox {
+   display: none;
+}
+
+.ham-btn {
+   display: none;
+   flex-direction: column;
+   gap: 0.3125rem;
+   cursor: pointer;
+   padding: 0.25rem;
+}
+
+.ham-btn span {
+   display: block;
+   width: 1.5rem;
+   height: 0.125rem;
+   background-color: var(--word-alt-color);
+   transition: all var(--transition-base);
+   transform-origin: center;
+}
+
+.ham-checkbox:checked~.ham-btn span:nth-child(1) {
+   transform: translateY(7px) rotate(45deg);
+}
+
+.ham-checkbox:checked~.ham-btn span:nth-child(2) {
+   opacity: 0;
+}
+
+.ham-checkbox:checked~.ham-btn span:nth-child(3) {
+   transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+   .page-header {
+      flex-wrap: wrap;
+   }
+
+   .ham-btn {
+      display: flex;
+   }
+
+   .main-nav {
+      display: none !important;
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      padding-top: var(--space-md);
+      order: 3;
+   }
+
+   .ham-checkbox:checked~.main-nav {
+      display: flex !important;
+   }
+}
+
 /* Header */
 .page-header {
    display: flex;
