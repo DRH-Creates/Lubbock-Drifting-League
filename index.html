@@ -10,11 +10,11 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-            rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -38,8 +38,8 @@
         <section id="hero" class="hero-section">
             <!-- Background Img -->
             <div class="hero-image-wrapper" aria-hidden="true">
-                <img src="assets/images/e36-drifting.webp" alt="Bmw e36 Drifting around a track"
-                    class="hero-image" loading="eager">
+                <img src="assets/images/e36-drifting.webp" alt="Bmw e36 Drifting around a track" class="hero-image"
+                    loading="eager" fetchpriority="high">
             </div>
             <div class="hero-title" role="heading" aria-level="1">
                 <h1>Lubbock Drifting League</h1>
@@ -47,14 +47,15 @@
         </section>
         <div id="winners" class="grid-container">
             <article class="photo-one">
-                 <img src="assets/images/s15-drifiting.webp" alt="Nissan Silvia S15 Drifting a corner" loading="lazy">
+                <img src="assets/images/s15-drifiting.webp" alt="Nissan Silvia S15 Drifting a corner" loading="lazy">
                 <div class="card-content" role="region">
                     <h2><i class="fa-solid fa-trophy" aria-hidden="true"></i>1st Place</h2>
                     <p>Valentines Drift Championship</p>
                 </div>
             </article>
             <article class="photo-two">
-                <img src="assets/images/drifting-nissan.webp" alt="Black Nissan Drifting a corner during a competition" loading="lazy">
+                <img src="assets/images/drifting-nissan.webp" alt="Black Nissan Drifting a corner during a competition"
+                    loading="lazy">
                 <div class="card-content" role="region">
                     <h2><i class="fa-solid fa-trophy" aria-hidden="true"></i>2nd Place</h2>
                     <p>Valentines Drift Championship</p>
@@ -74,20 +75,20 @@
                     <p>Valentines Drift Championship</p>
                 </div>
             </article>
-        </section>
-        <section id="about" class="about-section">
+        </div>
+        <div id="about" class="about-section">
             <h2 class="about-heading">Stay Up to Date on<br>All the latest News</h2>
             <p class="about-description">Weekly Updates for everything from practice to the next big event.</p>
             <div class="section-link-wrap">
-                <a href="#" class="section-link" role="button" >Join the LDL community</a>
+                <a href="#" class="section-link" role="button">Join the LDL community</a>
             </div>
         </div>
         <div id="news" class="news-section">
-             <div class="articles-grid">
+            <div class="articles-grid">
                 <article class="article-card article-small">
                     <header class="article-card-header">
-                        <a href="#"><img src="assets/images/trophies.webp"
-                                alt="Trophies on a shelf" class="article-image" loading="lazy"></a>
+                        <a href="#"><img src="assets/images/trophies.webp" alt="Trophies on a shelf"
+                                class="article-image" loading="lazy"></a>
                     </header>
                     <div class="article-body" role="region">
                         <h3 class="article-title"><a href="#">Valentine's Drift Championship</a></h3>
@@ -95,14 +96,16 @@
                         <p class="article-text">Valentine’s Drift Championship Wraps Up with Intense Battles</p>
                     </div>
                     <footer class="article-card-footer" role="contentinfo">
-                        <span class="article-meta"><i class="fa-solid fa-user" aria-hidden="true"></i>Jane Doe</span>
-                        <span class="article-meta"><i class="fa-solid fa-calendar" aria-hidden="true"></i>Jan 2026</span>
+                        <span class="article-meta"><i class="fa-solid fa-user" aria-hidden="true"></i>Jane
+                            Doe</span>
+                        <span class="article-meta"><i class="fa-solid fa-calendar" aria-hidden="true"></i>Jan
+                            2026</span>
                     </footer>
                 </article>
                 <article class="article-card article-small" role="region">
                     <header class="article-card-header">
-                        <a href="#"><img src="assets/images/coming-soon.webp"
-                                alt="Black and White coming soon sign" class="article-image" loading="lazy"></a>
+                        <a href="#"><img src="assets/images/coming-soon.webp" alt="Black and White coming soon sign"
+                                class="article-image" loading="lazy"></a>
                     </header>
                     <div class="article-body" role="region">
                         <h3 class="article-title"><a href="#">Upcoming Events</a></h3>
@@ -110,8 +113,10 @@
                         <p class="article-text">Spring Break Drift Bash Announced as Next Major Event</p>
                     </div>
                     <footer class="article-card-footer" role="contentinfo">
-                        <span class="article-meta"><i class="fa-solid fa-user" aria-hidden="true"></i>John Doe</span>
-                        <span class="article-meta"><i class="fa-solid fa-calendar" aria-hidden="true"></i>Jan 2026</span>
+                        <span class="article-meta"><i class="fa-solid fa-user" aria-hidden="true"></i>John
+                            Doe</span>
+                        <span class="article-meta"><i class="fa-solid fa-calendar" aria-hidden="true"></i>Jan
+                            2026</span>
                     </footer>
                 </article>
             </div>
